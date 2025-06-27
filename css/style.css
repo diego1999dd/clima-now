@@ -1,0 +1,200 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+}
+#app {
+  max-width: 400px;
+  margin: 40px auto 16px auto;
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 12px;
+  box-shadow: 0 2px 16px #0002;
+  padding: 32px 24px 24px 24px;
+  text-align: center;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+#app .icon,
+#app .temp,
+#app .desc,
+#app .formal {
+  display: block;
+  text-align: center;
+  margin-right: auto;
+}
+
+#app .icon {
+  font-size: 48px;
+  margin-bottom: 8px;
+}
+#app .temp {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+#app .desc {
+  font-size: 1.1em;
+  color: #666;
+  margin-bottom: 8px;
+}
+#app .formal {
+  margin-bottom: 12px;
+}
+#app .details {
+  font-size: 0.95em;
+  color: #444;
+  margin-bottom: 8px;
+}
+#forecast {
+  margin-top: 24px;
+}
+#forecast-day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+#forecast-day .icon {
+  font-size: 1.5em;
+  margin: 0 4px;
+}
+#forecast-day .desc {
+  min-width: 120px;
+  text-align: left;
+}
+#search-form {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+#city-input {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  width: 200px;
+}
+#search-form button {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  background: #1976d2;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#search-form button:hover {
+  background: #125ea2;
+}
+body.bg-sun {
+  background: linear-gradient(120deg, #ffe259 0%, #ffa751 100%);
+  overflow: hidden;
+}
+body.bg-sun::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+    circle at 70% 30%,
+    #fffbe6 0%,
+    #ffe259 40%,
+    transparent 80%
+  );
+  opacity: 0.7;
+  z-index: 0;
+  pointer-events: none;
+  animation: sunGlow 6s ease-in-out infinite alternate;
+}
+@keyframes sunGlow {
+  0% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+body.bg-cloud {
+  background: linear-gradient(180deg, #e0eafc 0%, #cfdef3 100%);
+  overflow: hidden;
+}
+body.bg-cloud::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: none;
+  opacity: 1;
+  z-index: 0;
+  pointer-events: none;
+}
+body.bg-rain {
+  background: linear-gradient(120deg, #4e54c8 0%, #8f94fb 100%);
+  overflow: hidden;
+}
+body.bg-rain::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 0;
+  background: none;
+  animation: none;
+}
+.rain-drop {
+  position: fixed;
+  top: 0;
+  width: 2px;
+  height: 18px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 1px;
+  z-index: 1;
+  pointer-events: none;
+  animation: rainDrop 1.2s linear infinite;
+}
+@keyframes rainDrop {
+  0% {
+    transform: translateY(0);
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+body.bg-storm {
+  background: linear-gradient(120deg, #232526 0%, #414345 100%);
+  overflow: hidden;
+}
+body.bg-snow {
+  background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+  overflow: hidden;
+}
+body.bg-fog {
+  background: linear-gradient(120deg, #cfd9df 0%, #e2ebf0 100%);
+  overflow: hidden;
+}
+#app,
+#forecast,
+#search-form {
+  position: relative;
+  z-index: 2;
+}
