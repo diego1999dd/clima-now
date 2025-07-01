@@ -79,8 +79,6 @@ Se tivesse mais tempo, implementaria:
 
 ## Explicação das APIs Utilizadas
 
-## Explicações sobre APIs
-
 - **Open-Meteo Geocoding API:**
 
   - Endpoint: `https://geocoding-api.open-meteo.com/v1/search`
@@ -102,8 +100,6 @@ Se tivesse mais tempo, implementaria:
 
 - **Mapeamento de Weathercode:**
   - O app converte o código numérico retornado pela API em ícones, descrições curtas e formais em português, facilitando a compreensão pelo usuário.
-
-## Arquitetura do Sistema
 
 ## Arquitetura do Sistema
 
