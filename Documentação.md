@@ -15,17 +15,26 @@ O Clima Now é um aplicativo web moderno e responsivo para consulta do clima atu
 
 ---
 
-Captura de tela 1: Busca da cidade
+## Captura de tela 1: Busca da cidade
+
+---
+
 ![alt text](image-2.png)
 
 ---
 
-Captura de tela 2: Exibição do clima, etc
+## Captura de tela 2: Exibição do clima, etc
+
+---
+
 ![alt text](image-1.png)
 
 ---
 
-Captura de tela 3: Animação baseada em cidades que estão chovendo
+## Captura de tela 3: Animação baseada em cidades que estão chovendo
+
+---
+
 ![alt text](image-3.png)
 
 ---
