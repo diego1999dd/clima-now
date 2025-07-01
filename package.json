@@ -1,0 +1,24 @@
+{
+  "name": "aplicativo-de-clima",
+  "version": "1.0.0",
+  "description": "![alt text](image.png)",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diego1999dd/Aplicativo-de-Clima.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/diego1999dd/Aplicativo-de-Clima/issues"
+  },
+  "homepage": "https://github.com/diego1999dd/Aplicativo-de-Clima#readme",
+  "devDependencies": {
+    "jest": "^30.0.3"
+  }
+}

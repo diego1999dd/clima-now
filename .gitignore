@@ -1,0 +1,32 @@
+# Node
+node_modules/
+.env
+*.log
+npm-debug.log*
+
+# VSCode
+.vscode/
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Testes/Jest
+coverage/
+
+# Outros
+/dist/
+/build/
+*.tmp
+*.swp
+
+# Windows
+*.exe
+*.dll
+*.db
+
+# Mac
+*.DS_Store
+
+# Linux
+*~
